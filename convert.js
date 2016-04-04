@@ -1,3 +1,6 @@
+/*
+ convert JSON  path to JSONPath exressions
+ */
 function convert(path){
   if(!path){return undefined;}
 
@@ -6,11 +9,3 @@ function convert(path){
 
   return '$.' + identifierArray.join('.');
 }
-
-function o(str){
-  console.log(str);
-}
-/*
-test cases:
-  null path should return undefined
-  */
